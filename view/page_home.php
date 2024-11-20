@@ -1,0 +1,1 @@
+<script src="<?=$baseUrl?>/asset/js/animation.js"></script>

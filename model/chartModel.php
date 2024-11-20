@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // models/ChartModel.php
 class ChartModel {
     public function getChartData() {
@@ -11,4 +11,4 @@ class ChartModel {
             ['Argentina', 14.5],
         ];
     }
-}
+}?> -->

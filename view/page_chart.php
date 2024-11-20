@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
-</head>
-<body>
-<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
-
+<div id="myChart" style="width:100%; max-width:1000px; height:900px;"></div>
 <script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+const data = google.visualization.arrayToDataTable([
+  ['Contry', 'Mhl'],
+  ['Khách hàng',54.8],
+  ['Đơn Hàng',48.6],
+  ['Số lượng sản phẩm',44.4],
+  ['USA',23.9],
+  ['Argentina',14.5]
+]);
+
+const options = {
+  title:'Bảng Thống Kê',
+  is3D:true
+};
+
+const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+}
+</script>
+
+<!-- <script>
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
@@ -24,6 +41,4 @@ function drawChart() {
     chart.draw(data, options);
 }
 
-</script>
-</body>
-</html>
+</script> -->

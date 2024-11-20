@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?=$baseUrl?>/asset/css/style.css">
-
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <title>Admin TechZone</title> 
 </head>
 <body>
     <nav>
         <div class="logo-name">
             <div class="logo-image">
-                <img src="images/logo.png" alt="">
             </div>
-
+            <a href="<?=$baseUrl?>/?mod=page&act=home">
             <span class="logo_name">TechZone</span>
+            </a>
         </div>
 
         <div class="menu-items">
@@ -24,15 +24,15 @@
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Quản lý đơn hàng</span>
                 </a></li>
-                <li><a href="<?=$baseUrl?>/view/page_user.php">
+                <li><a href="<?=$baseUrl?>/?mod=user&act=user">
                     <i class="uil uil-files-landscapes"></i>
                     <span class="link-name">Quản lý khách hàng</span>
                 </a></li>
-                <li><a href="<?=$baseUrl?>/view/page_chart.php">
+                <li><a href="<?=$baseUrl?>/?mod=chart&act=chart">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">Báo cáo thống kê</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="<?=$baseUrl?>/?mod=cate&act=cate">
                     <i class="uil uil-thumbs-up"></i>
                     <span class="link-name">Quản lý danh mục</span>
                 </a></li>

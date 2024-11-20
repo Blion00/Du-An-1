@@ -1,19 +1,22 @@
 <?php
-$baseUrl = "http://localhost/admin";
+$baseUrl = "http://localhost/Project1_Group-TechZone/admin";
 if (isset($_GET['mod'])) {
 switch($_GET['mod']){
-    case'page'; 
-    include_once 'controller/c_page.php';
+    case'page' : 
+        include_once 'controller/c_page.php';
+        break;
+    case 'user' :
+        include_once 'controller/c_user.php';
+        break;
+    case 'chart' :
+        include_once 'controller/c_chart.php';
+    // $controller = new ChartController();
+    // $controller->showChart();
     break;
-    case 'user';
-    include_once 'controller/c_user.php';
-    break;
-    case 'chart';
-    include_once 'controllers/ChartController.php';
-    $controller = new ChartController();
-    $controller->showChart();
-    break;
-    default:
+    case 'cate' :
+        include_once 'controller/c_cate.php';
+        break;
+    default :
     include_once 'controller/c_user.php';
     break;
     }

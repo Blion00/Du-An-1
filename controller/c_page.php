@@ -6,9 +6,11 @@ switch ($_GET['act']) {
         include_once "view/page_home.php";
         include_once "view/layout/footer.php";
         break;
-    case 'contact':
-
-        break;
+    // case 'chart':
+    //     include_once "view/layout/header.php";
+    //     include_once "./admin/view/page_chart.php";
+    //     include_once "view/layout/footer.php";
+    //     break;
     case 'about':
 
         break;

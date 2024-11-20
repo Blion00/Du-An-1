@@ -1,7 +1,7 @@
 <?php
 if(isset($_GET['act'])) {
 switch ($_GET['act']) {
-    case 'user': //?mod=user&act=
+    case 'user': //?mod=user&act=user
         //Xử Lý
         //Hiển thị
         include_once  "../admin/view/layout/header.php";
