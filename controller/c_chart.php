@@ -19,9 +19,6 @@ switch ($_GET['act']) {
         include_once '/xampp/htdocs/Project1_Group-TechZone/admin/view/page_chart.php';
         include_once 'view/layout/footer.php';
         break;
-    case 'about':
-
-        break;
     default:
         # code...
         break;
